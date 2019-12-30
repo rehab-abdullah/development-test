@@ -1,0 +1,10 @@
+body {
+  background-color:'#008B8B'
+}
+.Main {
+  background-color:#38888a ;
+  widows: 100vw;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+}
