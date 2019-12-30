@@ -15,10 +15,16 @@ const style = {
 
 }
 
-
+const center = {
+    display: 'flex',
+    justifyContent: 'center'
+}
 
 const row = {
     width: '100%'
+}
+const margin ={
+    marginLeft: '30px'
 }
 
 class Restaurantcard extends React.Component{
@@ -29,18 +35,17 @@ class Restaurantcard extends React.Component{
         return(
             <div style={style}>
             <Container>
-                <Row style={row} style={{display: 'flex', justifyContent: 'center'}}>
+                <Row style={row} style={center}>
                    <p>{this.props.name}</p> 
                 </Row>
-                <Row style={{display: 'flex', justifyContent: 'center'}} lg={{ span: 8, offset: 2 }}>
+                <Row style={center} lg={{ span: 8, offset: 2 }}>
                     <p>{this.props.rate}/10 - {this.props.cat}</p>
                 </Row>
-                 
-                <Row style={{display: 'flex', justifyContent: 'center'}} >
-                     <FaHeart style={{ marginLeft: '10px'}}/>
-                     <AiFillPicture style={{ marginLeft: '10px'}}/>
-                     <FiUpload style={{ marginLeft: '10px'}}/>
-                     <FaMapMarkedAlt style={{ marginLeft: '10px'}}/>
+                <Row style={center} >
+                     <FaHeart style={margin}/>
+                     <AiFillPicture style={margin}/>
+                     <FiUpload style={margin}/>
+                     <FaMapMarkedAlt style={margin}/>
                 </Row>
             </Container>
             </div>

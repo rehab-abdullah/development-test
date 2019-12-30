@@ -45,7 +45,7 @@ export default connect(
 )(
 
 class Home extends Component {
-  componentWillMount = async () => {
+  UNSAFE_componentWillMount = async () => {
       await this.props.getCoords();
 
   }

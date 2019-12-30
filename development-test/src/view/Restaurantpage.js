@@ -21,7 +21,7 @@ const DispatchToProps = dispatch => ({
 
 export default connect(StateToProps, DispatchToProps)(
     class Restaurantpage extends Component {
-        componentWillMount = async () => {
+        UNSAFE_componentWillMount = async () => {
             await this.props.getCoords();
         }
 
